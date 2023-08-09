@@ -24,14 +24,6 @@ static bool expand_buffer(Table* t) {
     return true;
 }
 
-// Shrinks table buffer if necessary
-/* static void shrink_buffer(Table* t) {
-    if(EXPAND_FACTOR * EXPAND_FACTOR * t->size > t->capacity || t->capacity == MIN_CAPACITY)
-        return;
-    t->rows = (Row*)realloc(t->rows, sizeof(Row) * t->capacity / EXPAND_FACTOR);
-    t->capacity /= EXPAND_FACTOR;
-} */
-
 Table* create_table() {
     Table* tb = (Table*)malloc(sizeof(Table));
     if(!tb)
