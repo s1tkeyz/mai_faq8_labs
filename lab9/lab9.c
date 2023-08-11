@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 // constants
-#define I_0 -15
-#define J_0 -15
+#define I_0 13
+#define J_0 -9
 #define L_0 -4
 
 int main(void) {
