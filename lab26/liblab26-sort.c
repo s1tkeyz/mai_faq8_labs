@@ -38,4 +38,5 @@ void hoare_sort(TStack* s) {
     stack_concat(s, less);
     stack_concat(s, equal);
     stack_concat(s, greater);
+    // Mem leak. Destroy less, equal and greater
 }
